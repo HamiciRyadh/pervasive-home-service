@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.im2ag.m2gi.pervasiveSystems.administration.impl.AdministrationServiceImpl" name="AdministrationService">
+    <requires optional="true" specification="org.im2ag.m2gi.pervasiveSystems.securityService.configuration.SecurityConfiguration" field="securityConfiguration"/>
+    <provides specifications="org.im2ag.m2gi.pervasiveSystems.administration.AdministrationServiceManager"/>
+    <requires optional="true" specification="org.im2ag.m2gi.pervasiveSystems.communicationService.configuration.CommunicationFunctionalities" field="communicationHandler"/>
+    <provides specifications="org.im2ag.m2gi.pervasiveSystems.administration.security.AdministrationSecurityServiceManager"/>
+    <requires optional="true" specification="org.im2ag.m2gi.pervasiveSystem.safetyService.configuration.SafetyAdministration" field="safetyAdministration"/>
+    <requires optional="true" specification="org.im2ag.m2gi.pervasiveSystems.doorWindowService.administration.DoorWindowAdministration" field="doorWindowAdministration"/>
+  </component>
+  <instance component="AdministrationService" name="AdministrationService-1"/>
+</ipojo>

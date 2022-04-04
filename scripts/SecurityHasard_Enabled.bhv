@@ -1,0 +1,9 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	<create-person id="Thief" type="Man" />
+	<set-device-property deviceId="SirenS0-C2556B-G" property="fault" value="yes"/>
+	
+	<delay value="100" />
+
+	<move-person-zone personId="Thief" zoneId="corridor"  />
+	
+</behavior>

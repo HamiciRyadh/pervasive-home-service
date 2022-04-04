@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.im2ag.m2gi.pervasiveSystem.safetyService.SafetyServiceImplImpl" name="SafetyService">
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.gasSensor.CarbonDioxydeSensor" field="carbonDioxydeSensors">
+      <callback method="bindCarbonDioxydeSensor" type="bind"/>
+      <callback method="unbindCarbonDioxydeSensor" type="unbind"/>
+    </requires>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.gasSensor.CarbonMonoxydeSensor" field="carbonMonoxydeSensors">
+      <callback method="bindCarbonMonoxydeSensor" type="bind"/>
+      <callback method="unbindCarbonMonoxydeSensor" type="unbind"/>
+    </requires>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.security.Siren" field="sirens">
+      <callback method="bindSiren" type="bind"/>
+      <callback method="unbindSiren" type="unbind"/>
+    </requires>
+    <provides specifications="org.im2ag.m2gi.pervasiveSystem.safetyService.configuration.SafetyAdministration"/>
+    <requires optional="true" specification="org.im2ag.m2gi.pervasiveSystems.administration.security.AdministrationSecurityServiceManager" field="safetyAdministrator"/>
+  </component>
+  <instance component="SafetyService" name="SafetyService-1"/>
+</ipojo>

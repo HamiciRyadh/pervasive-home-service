@@ -1,0 +1,7 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	<create-person id="Thief" type="Man" />
+
+	<delay value="100" />
+
+	<move-person-zone personId="Thief" zoneId="corridor"  />
+</behavior>

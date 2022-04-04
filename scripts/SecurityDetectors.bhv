@@ -1,0 +1,15 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	
+	<create-device id="PresenceSensorPS-C2556B-G" type="iCasa.PresenceSensor" />
+	<move-device-zone deviceId="PresenceSensorPS-C2556B-G" zoneId="corridor" />
+
+	<create-device id="DoorWindowSensor-C2556B-G" type="iCasa.DoorWindowSensor" />
+	<move-device-zone deviceId="DoorWindowSensor-C2556B-G" zoneId="corridor" />
+
+	<create-device id="SirenS0-C2556B-G" type="iCasa.Siren" />
+	<move-device-zone deviceId="SirenS0-C2556B-G" zoneId="corridor" />
+
+	<create-device id="SpeakerS0-C2556B-G" type="iCasa.Speaker" />
+	<move-device-zone deviceId="SpeakerS0-C2556B-G" zoneId="corridor" />
+
+</behavior>

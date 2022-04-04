@@ -1,0 +1,3 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	<set-device-property deviceId="GasC02-A1255D-D" property="carbonDioxydeSensor.currentConcentration" value="1600000"/>
+</behavior>

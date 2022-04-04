@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.im2ag.m2gi.pervasiveSystems.communicationService.impl.CommunicationServiceImpl" name="CommunicationService">
+    <provides specifications="org.im2ag.m2gi.pervasiveSystems.communicationService.configuration.CommunicationFunctionalities"/>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+  </component>
+  <instance component="CommunicationService" name="CommunicationService-1"/>
+</ipojo>

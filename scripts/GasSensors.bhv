@@ -1,0 +1,23 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+	
+	<create-device id="GasC02-A1255D-D" type="iCasa.CO2GasSensor" />
+	<create-device id="GasC0-A2556B-G" type="iCasa.COGasSensor" />
+
+	<move-device-zone deviceId="GasC02-A1255D-D" zoneId="kitchen" />
+	<move-device-zone deviceId="GasC0-A2556B-G" zoneId="kitchen" />
+
+
+	<create-device id="GasC02-B1255D-D" type="iCasa.CO2GasSensor" />
+	<create-device id="GasC0-B2556B-G" type="iCasa.COGasSensor" />
+
+	<move-device-zone deviceId="GasC02-B1255D-D" zoneId="corridor" />
+	<move-device-zone deviceId="GasC0-B2556B-G" zoneId="corridor" />
+
+	<create-device id="GasC0-C2556B-G" type="iCasa.COGasSensor" />
+
+	<move-device-zone deviceId="GasC0-C2556B-G" zoneId="bedroom" />
+
+	<create-device id="SirenS0-C2556B-G" type="iCasa.Siren" />
+	<move-device-zone deviceId="SirenS0-C2556B-G" zoneId="corridor" />
+
+</behavior>

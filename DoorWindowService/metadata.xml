@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.im2ag.m2gi.pervasiveSystems.doorWindowService.impl.DoorWindowServiceImpl" name="DoorWindowService">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <provides specifications="org.im2ag.m2gi.pervasiveSystems.doorWindowService.administration.DoorWindowAdministration"/>
+  </component>
+  <instance component="DoorWindowService" name="DoorWindowService-1"/>
+</ipojo>

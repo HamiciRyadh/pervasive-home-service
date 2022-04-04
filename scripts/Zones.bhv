@@ -1,0 +1,13 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1440">
+
+	<create-zone id="bathroom"  leftX="55" topY="20" X-Length="260" Y-Length="340" />
+
+	<create-zone id="bedroom"  leftX="55" topY="370" X-Length="259" Y-Length="210" />
+
+	<create-zone id="livingroom" leftX="410" topY="28" X-Length="245" Y-Length="350" />
+	 
+	<create-zone id="kitchen"  leftX="410" topY="370" X-Length="245" Y-Length="210" />	 
+	
+	<create-zone id="corridor"  leftX="310" topY="20" X-Length="100" Y-Length="550" />
+
+</behavior>
